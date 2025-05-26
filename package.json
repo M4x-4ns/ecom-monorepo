@@ -1,0 +1,21 @@
+{
+  "name": "ecom-monorepo",
+  "version": "1.0.0",
+  "description": "Ecommerce monorepo with client and server",
+  "scripts": {
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install",
+    "install:all": "npm run install:client && npm run install:server",
+    "start:client": "cd client && npm start",
+    "start:server": "cd server && npm start",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "build:client": "cd client && npm run build",
+    "test:client": "cd client && npm test",
+    "test:server": "cd server && npm test",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
