@@ -20,6 +20,7 @@ Other
 - moment.js
 - zustand
 - cloudinary
+- stripe
 
 Deploy
 sql โดย supabase
